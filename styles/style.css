@@ -1,0 +1,63 @@
+/* User messages */
+[data-testid="stChatMessage"]:nth-child(odd) {
+    color: #1976D2;
+    border-radius: 12px;
+    padding: 12px;
+}
+
+/* Assistant messages */
+[data-testid="stChatMessage"]:nth-child(even) {
+    color: #F1F3F6;
+    border-radius: 12px;
+    padding: 12px;
+}
+
+.assistant-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 25px;
+}
+
+.assistant-avatar-container {
+    width: 100px;
+    height: 100px;
+    flex-shrink: 0;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.assistant-avatar {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+}
+
+.assistant-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.assistant-title {
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.assistant-status {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    margin-top: 4px;
+    opacity: 0.7;
+}
+
+.status-dot {
+    width: 8px;
+    height: 8px;
+    background: #22c55e;
+    border-radius: 50%;
+    display: inline-block;
+}
